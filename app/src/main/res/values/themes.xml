@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CardSample3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Dim_Gray</item>
+        <item name="colorPrimaryVariant">@color/Linen</item>
+        <item name="colorOnPrimary">@color/Isabelline</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Linen</item>
+        <item name="colorSecondaryVariant">@color/Dim_Gray</item>
+        <item name="colorOnSecondary">@color/Isabelline</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>    <!--  Androidのステータスバー -->
+        <item name="android:navigationBarColor">@color/Dim_Gray</item>          <!--  Androidのナビバー -->
+        <item name="colorAccent">@color/Dim_Gray</item>                         <!--  スイッチOn状態 -->
+        <item name="colorError">@color/Red</item>
+
+
+    </style>
+
+
+    <style name="actionBar" parent="Widget.AppCompat.ActionBar">
+        <!-- タイトルバーの背景色 -->
+        <item name="android:background">@color/Red</item>
+        <item name="titleTextColor">@color/Red</item>                         <!--  タイトルカラー　　これを指定するときは、 parentに ".Bridge"を追加しておく -->
+        <item name="titleCentered">true</item>          <!-- これではセンタリングできなかった -->
+        <item name="subtitleCentered">true</item>
+    </style>
+
+    <style name="CustomStyle.BottomAppBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="backgroundTint">@color/Linen</item>                   <!-- バーの背景 -->
+        <item name="colorPrimary">@color/Dark_Gray</item>                           <!-- 選択状態 -->
+        <item name="colorOnSurface">@color/Granite_Gray</item>                  <!-- 非選択状態 -->
+
+    </style>
+
+     <!--
+    <style name="Theme.CardSample3.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    -->
+</resources>
